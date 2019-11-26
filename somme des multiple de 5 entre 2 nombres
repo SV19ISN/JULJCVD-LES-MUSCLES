@@ -1,0 +1,26 @@
+#trouver la somme des multiple de 5 entre deux bornes a et b
+
+#Entrée des sortie
+def entree():
+    a=int(input()) 
+    b=int(input())
+    return a,b
+
+#Calcul de la somme des multiple de 5 entre a et b
+def calcul(a,b):
+    somme=0
+    while(b>a):
+        reste= a%5
+        if reste==0:
+           somme=somme+a
+        a=a+1
+    return somme
+    
+#print des sorties
+def sortie(resultat):
+    print(resultat)
+
+
+a,b=entree()
+resultat=calcul(a,b)
+sortie(resultat)
