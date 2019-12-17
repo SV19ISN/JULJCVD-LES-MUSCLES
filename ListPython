@@ -1,0 +1,16 @@
+#COMPTER LE NOMBRE DE MOTS DANS UNE PHRASE
+a = input()
+b = a.split()
+
+print(a)
+print("Il y a",len(b),"mots")
+
+x = len(b[0])
+
+for i in range(len(b)):
+    z=len(b[i])
+    if (x<z):
+        x = z
+        y = b[i]
+
+print("le plus long mots est",y,"et il a",x,"lettres")
